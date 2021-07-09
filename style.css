@@ -1,0 +1,23 @@
+h1 {
+    font-family:'Source Sans Pro';
+    color:red;
+}
+
+@font-face {
+    font-family:'Source Sans Pro';
+    src: url("SourceSansPro-Bold.ttf");
+}
+
+body {
+    text-align:center;
+    background-color: aquamarine;
+}
+h3 {
+    font-family:'Source Sans Pro';
+}
+#camera,#result {
+    width:360px;
+    height:250px;
+    border-width:10px;
+    border-style:double;
+}

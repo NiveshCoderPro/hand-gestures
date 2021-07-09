@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Hand Gestures</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+            
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+            <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+            <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <center>
+       <h1>Hand Gestures</h1>
+       <h3>Note this model is trained to identify the following hand gestures</h3>
+       <div id = "gesture">
+           <span style = "font-size: 30px;">&#128077</span>
+           <span style = "font-size: 30px;">&#9996 </span>
+           <span style = "font-size: 30px;">&#128076</span>
+       </div>
+       <div class = "col-md-4 col-sm-12 col-xs-12">
+        <label>Webcam View</label>
+        <br>
+        <div id="camera"></div>
+        <br>
+        <button onclick = "capture_image()" class = "btn btn-primary btn btn-flat">Capture Image</button>
+       </div>
+        <div class = "col-md-4 col-sm-12 col-xs-12">
+            <label style = "color:green; background-color: white; border-radius: 4px;">Prediction - <span id="Prediction"></span></label>
+            <br>
+        <span id = "Prediction2" style = "width:30%"></span>
+        </div>
+            <div class="col-md-4 col-sm-12 col-xs-12">
+                <label>Snapshot View</label>
+                <br>
+                <div id="result"></div>
+                <br>
+                <button onclick="predict_emoji()" class="btn btn-danger btn btn-flat">Capture Image</button>
+            </div>
+       </center>
+    </body>
+        <script src="main.js"></script>
+</html>
